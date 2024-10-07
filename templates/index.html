@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borges Localiza</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script defer src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à Borges Localiza</h1>
+        <p>Especialistas em localizar e apreender veículos inadimplentes</p>
+    </header>
+
+    <section id="services">
+        <h2>Nossos Serviços</h2>
+        <ul>
+            <li>Rastreamento de veículos</li>
+            <li>Apreensão em caso de inadimplência</li>
+            <li>Atendimento rápido e eficiente</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <form id="contact-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Borges Localiza. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
