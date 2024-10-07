@@ -148,6 +148,7 @@ h2 {
 
 .contato-item {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .contato-item h3 {
@@ -317,10 +318,11 @@ button:hover {
     text-align: center;
     padding: 10px;
     color: #fff; /* Branco */
+    
 }
 
 footer {
     background-color: #333; /* Preto */
     padding: 10px;
-    margin-top: auto;
+    margin-top: 20px;
 }
