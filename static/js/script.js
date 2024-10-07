@@ -22,3 +22,18 @@ window.addEventListener('resize', () => {
     size = carouselImages[0].clientWidth;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
+
+// Funcionalidade de ocultar/mostrar lista de cidades
+document.addEventListener("DOMContentLoaded", function() {
+    const toggleButton = document.querySelector(".toggle-btn");
+    const cityList = document.querySelector(".city-list");
+
+    if (toggleButton && cityList) {
+        toggleButton.addEventListener("click", function() {
+            cityList.classList.toggle("hidden");
+            toggleButton.textContent = cityList.classList.contains("hidden") 
+                ? "Ver Cidades de Atuação" 
+                : "Esconder Cidades de Atuação";
+        });
+    }
+});

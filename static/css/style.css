@@ -1,29 +1,85 @@
+/* Fonte Barlow */
+.barlow-light {
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+}
+
+
+
 html {
     height: 100%;
     min-height: 100%;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Fundo leve para contraste */
     display: flex;
     flex-direction: column;
     min-height: 100%;
 }
 
+.services-container {
+    display: flex;
+    justify-content: space-around; /* Para espaçar igualmente as divs */
+    align-items: stretch; /* Para garantir que todas as divs tenham a mesma altura */
+}
+
+.service-item {
+    flex: 1; /* Para que cada item tenha largura igual */
+    margin: 0 20px; /* Espaçamento lateral entre os itens */
+    text-align: center; /* Centraliza o texto */
+}
+
+.service-item .imagem-personalizada {
+    width: 320px;  /* Define a largura desejada */
+    height: 300px;  /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Para um efeito de borda arredondada */
+    transition: transform 0.3s; /* Para adicionar uma animação ao passar o mouse */
+}
+
+
+.service-item .imagem-personalizada:hover {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+}
+
+
+/* Estilização do cabeçalho */
+
 header {
-    background-color: #fe7f18 ;
-    color: #fff;
+    background-color: #fe7f18; /* Laranja */
+    color: #fff; /* Branco */
     padding: 20px;
     text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+
 }
 
-header h1 {
-    margin: 0;
+
+/* Seções de serviços e contato */
+#services,
+#highlighted-services,
+.contato {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff; /* Branco */
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 
+/* Títulos */
+h2 {
+    font-size: 26px;
+    color: #333; /* Preto para contraste */
+}
+
+/* Carrossel */
 .carousel-container {
     width: 80%; /* Ajuste conforme necessário */
     overflow: hidden;
@@ -37,75 +93,16 @@ header h1 {
 }
 
 .carousel-slide img {
-    width: 100%; /* Cada imagem ocupa 100% da largura do contêiner */
-    height: auto; /* Ajusta a altura automaticamente para manter a proporção */
-    flex: 0 0 100%; /* Garante que uma imagem ocupe 100% da área visível */
-    object-fit: cover; /* Cobre o contêiner, mantendo as proporções */
-    object-position: top; /* Mantém o foco na parte superior da imagem */
-    max-height: 600px; /* Ajuste para manter uma altura razoável */
+    width: 100%; 
+    height: auto; 
+    flex: 0 0 100%; 
+    object-fit: cover; 
+    object-position: top; 
+    max-height: 600px; 
     border-radius: 5px;
 }
 
-
-
-#services, #contact {
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-}
-
-h2 {
-    color: #333;
-}
-
-.contato-itens {
-    text-align: center;
-}
-
-.contato-icones {
-    margin: 2rem;
-}
-
-#testimonials {
-    background-color: #f9f9f9;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.testimonial-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.testimonial {
-    flex-basis: 30%;
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial p {
-    font-style: italic;
-    color: #333;
-}
-
-.testimonial span {
-    display: block;
-    margin-top: 10px;
-    color: #666;
-}
-
-
-#highlighted-services {
-    background-color: #fff;
-    padding: 40px 20px;
-    text-align: center;
-}
-
+/* Itens de serviço destacados */
 .services-container {
     display: flex;
     justify-content: space-around;
@@ -126,6 +123,7 @@ h2 {
 
 .service-item h3 {
     margin-bottom: 10px;
+    color: #fe7f18; /* Laranja para títulos dos serviços */
 }
 
 .service-item p {
@@ -133,15 +131,196 @@ h2 {
 }
 
 
+
+/* Estilização do formulário de contato */
+.contato {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.contato h1,
+.contato h2 {
+    text-align: center;
+}
+
+.contato-item {
+    margin-bottom: 20px;
+}
+
+.contato-item h3 {
+    margin-bottom: 5px;
+    color: #363432; /* Laranja */
+}
+
+/* Botão */
+button {
+    padding: 10px;
+    background-color: #fe7f18; /* Laranja */
+    color: white; /* Branco */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #e06e00; /* Um tom mais escuro de laranja para hover */
+}
+/* Animação de fade-in para seções */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplicar animação nas seções */
+#services,
+#highlighted-services,
+.contato {
+    animation: fadeIn 0.8s ease forwards; /* Animação ao aparecer */
+}
+
+/* Efeito de hover nas imagens dos serviços */
+.service-item img {
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+.service-item:hover img {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+}
+
+/* Transição suave para as cartas de serviço */
+.service-item {
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px); /* Eleva um pouco o item ao passar o mouse */
+}
+
+
+/* Responsividade */
+@media only screen and (max-width: 768px) {
+    .carousel-container {
+        width: 100%; /* Ocupa toda a largura da tela menor */
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        flex-basis: 90%;
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .service-item img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .contato {
+        padding: 10px;
+    }
+}
+
+#cidades-atuacao {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+#cidades-atuacao h2 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeInTitle 1.5s ease-in-out;
+}
+
+#cidades-atuacao ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    animation: fadeInList 2s ease-in-out;
+}
+
+#cidades-atuacao li {
+    font-size: 1.5rem;
+    color: #555;
+    margin: 10px 0;
+    letter-spacing: 1px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+#cidades-atuacao li:hover {
+    color: #000;
+    transform: scale(1.1);
+}
+
+@keyframes fadeInTitle {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInList {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Rodapé */
 .text-footer {
     text-align: center;
     padding: 10px;
-    color: #fff;
+    color: #fff; /* Branco */
 }
 
 footer {
-    background-color: #333;
+    background-color: #333; /* Preto */
     padding: 10px;
     margin-top: auto;
-
 }

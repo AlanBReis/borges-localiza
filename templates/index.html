@@ -7,49 +7,17 @@
     <title>Borges Localiza</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <script defer src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
         <h1>Bem-vindo à Borges Localiza</h1>
-        <p>Especialistas em localizar e apreender veículos inadimplentes</p>
+        <p>Sua solução confiável em localização e apreensão de veículos inadimplentes</p>
     </header>
-
-    <section id="services">
-        <h2>Nossos Serviços</h2>
-        <h3>
-            Nossos Serviços
-Oferecemos soluções especializadas para a recuperação de bens e gerenciamento de risco, com foco em eficiência, segurança e confidencialidade. Nossos serviços são personalizados para atender às necessidades de nossos clientes, garantindo processos ágeis e resultados eficazes.
-        </h3>
-        <ul>
-            <h2>Rastreamento de veículos</h2>
-            <p>
-                Monitoramos em tempo real a localização de veículos, oferecendo relatórios detalhados e suporte contínuo. Nosso sistema de rastreamento utiliza a mais moderna tecnologia, garantindo precisão nas informações e maior controle sobre sua frota. Dessa forma, ajudamos empresas e clientes a minimizar riscos e tomar decisões estratégicas com dados confiáveis.
-
-                Benefícios do nosso rastreamento:
-                <li>Atualizações em tempo real sobre a localização dos veículos.</li>
-                <li>Monitoramento remoto com acesso a relatórios detalhados.</li>
-                <li>Prevenção de roubos e extravios, com sistema de alerta imediato.</li>
-            </p>
-            <h2>Apreensão em caso de inadimplência</h2>
-            <p>
-                Atuamos de forma rápida e eficiente na recuperação de bens em caso de inadimplência, seguindo todos os protocolos legais. Nosso serviço é conduzido com total discrição e respeito às partes envolvidas, garantindo a segurança e a integridade do bem apreendido.
-
-                Como funciona:
-                <li>Notificação e consulta de situação do cliente.</li>
-                <li>Operações discretas e seguras, com profissionais experientes.</li>
-                <li>Regularização rápida e gestão da logística de recuperação.</li>
-            </p>
-            <h2>Atendimento rápido e eficiente</h2>
-            <p>
-                Priorizamos a agilidade e a qualidade no atendimento a nossos clientes. Nossa equipe está sempre pronta para oferecer suporte personalizado e soluções imediatas para qualquer situação. Com um canal de atendimento dedicado, proporcionamos um acompanhamento contínuo e a resolução eficiente de demandas.
-
-                    Diferenciais do nosso atendimento:
-                    <li>Suporte profissional durante o horário comercial.</li>
-                    <li>Processos ágeis e soluções assertivas para emergências.</li>
-                    <li>Atendimento humanizado e acompanhamento personalizado.</li>
-            </p>
-        </ul>
-    </section>
 
     <section id="carousel">
 
@@ -62,53 +30,122 @@ Oferecemos soluções especializadas para a recuperação de bens e gerenciament
         </div>
     </section>
 
+    <section id="services">
+        
+        <ul>
+            <br>
+
+            <h2>Nossos Serviços </h2>
+            <p>
+                Na Borges Localiza, somos especialistas na recuperação de bens e no gerenciamento de riscos, com um foco inabalável em eficiência, segurança e confidencialidade. Oferecemos soluções personalizadas que atendem às necessidades específicas de nossos clientes, garantindo processos rápidos e resultados eficazes."
+            </p>
+            <br>
+
+            <h2>Apreensão Eficiente de Veículos</h2>
+            <p>
+                Contamos com uma equipe experiente que atua de forma rápida e discreta na recuperação de veículos inadimplentes. Nossos protocolos seguem rigorosamente a legislação vigente, assegurando a segurança e integridade do bem apreendido. Veja como funcionamos:
+                Como funciona:
+                <p>Notificação: Analisamos a situação do cliente para uma abordagem eficaz. <br>
+                    Operações Seguras: Realizamos apreensões discretas, sempre respeitando as partes envolvidas. <br>
+                    Logística de Recuperação: Garantimos uma gestão eficiente do processo, desde a apreensão até a entrega do bem</p>
+            </p>
+            <br>
+            <h2>Atendimento Dedicado e Ágil</h2>
+            <p>
+                Na Borges Localiza, o nosso compromisso é com a excelência no atendimento. Nossa equipe está à disposição de segunda a sexta-feira, das 8h às 17h, pronta para oferecer suporte personalizado e soluções imediatas para suas demandas.
+                    Diferenciais do nosso atendimento: <br> <br>
+                    Suporte Eficiente: Respostas rápidas durante o horário comercial. <br>
+                    Processos Simplificados: Resolvemos emergências de forma ágil. <br>
+                    Atendimento Humanizado: Priorizamos a comunicação clara e transparente.
+            </p>
+        </ul>
+    </section>
+
+
+
 
     <section id="highlighted-services">
         <h2>Por que escolher Borges Localiza?</h2>
         <div class="services-container">
             <div class="service-item">
-                <img src="{{ url_for('static', filename='images/rastreamento.png') }}" alt="Rastreamento">
-                <h3>Rastreamento Eficiente</h3>
-                <p>Nossos sistemas localizam seu veículo rapidamente.</p>
-            </div>
-            <div class="service-item">
-                <img src="{{ url_for('static', filename='images/apreensao.png') }}" alt="Apreensão">
+                <img src="{{ url_for('static', filename='images/apreensao.png') }}" alt="Apreensão" class="imagem-personalizada">
                 <h3>Apreensão Rápida</h3>
-                <p>Atuamos com rapidez e eficiência na apreensão.</p>
+                <p>Atuamos com rapidez e eficiência na apreensão de veículos inadimplentes.</p>
             </div>
             <div class="service-item">
-                <img src="{{ url_for('static', filename='images/atendimento.png') }}" alt="Atendimento">
-                <h3>Atendimento das 8h as 17h</h3>
+                <img src="{{ url_for('static', filename='images/busca.png') }}" alt="Busca" class="imagem-personalizada">
+                <h3>Busca Eficiente</h3>
+                <p>Nossa equipe é especializada em localizar veículos rapidamente, garantindo uma recuperação eficiente.</p>
+            </div>
+            <div class="service-item">
+                <img src="{{ url_for('static', filename='images/atendimento.jpg') }}" alt="Atendimento" class="imagem-personalizada">
+                <h3>Atendimento das 8h às 17h</h3>
                 <p>Estamos disponíveis para atender seus casos urgentes de segunda a sexta-feira, das 8h às 17h.</p>
             </div>
         </div>
     </section>
+    
+    
 
-    <section id="testimonials">
-        <h2>Depoimentos de Clientes</h2>
-        <div class="testimonial-container">
-            <div class="testimonial">
-                <p>"A Borges Localiza localizou e recuperou meu veículo em tempo recorde!"</p>
-                <span>- João da Silva</span>
+    <section id="cidades-atuacao">
+        <h2>Cidades de Atuação</h2>
+        <ul>
+            <li>IGUARAÇU</li>
+            <li>ÂNGULO</li>
+            <li>VALÊNCIA</li>
+            <li>POLINÓPOLIS</li>
+            <li>ALTANEIRA</li>
+            <li>ATALAIA</li>
+            <li>FLORIDA</li>
+            <li>LOBATO</li>
+            <li>MUNHOZ DE MELO</li>
+            <li>ASTORGA</li>
+            <li>TUPINAMBÁ</li>
+            <li>IÇARA</li>
+            <li>SANTA ZÉLIA</li>
+        </ul>
+    </section>
+    
+    
+    
+    
+    
+
+    <section class="contato">
+        <h1 class="titulo" id="Contato">Contato</h1>
+        <p class="descricao">Estamos à disposição para atendê-lo! Para consultas ou informações sobre nossos serviços, utilize os meios abaixo ou preencha o formulário de contato.</p>
+    
+        <div class="contato-itens">
+            <div class="contato-item">
+                <h3>WhatsApp</h3>
+                <p><a href="https://wa.me/5544920024399/?text=Oi%20Tudo%20bem%20?%20vamos%20conversar" target="_blank">Iniciar conversa</a></p>
             </div>
-            <div class="testimonial">
-                <p>"Serviço de altíssima qualidade e atendimento excepcional!"</p>
-                <span>- Maria Souza</span>
-            </div>
-            <div class="testimonial">
-                <p>"Fiquei impressionado com a eficiência e a rapidez."</p>
-                <span>- Carlos Pereira</span>
+            
+            <div class="contato-item">
+                <h3>E-mail</h3>
+                <p><a href="mailto:sabrine@bl.com.br">sabrine@borgeslocaliza.com.br</a></p>
             </div>
         </div>
-    </section>
     
-    
+        <!-- <h2>Formulário de Contato</h2>
+        <form action="seu_script_de_processamento.php" method="post" class="form-contato">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form> -->
 
-    <section class="contato-itens">
-        <h1 class="titulo" id="Contato" data-translate="contact">Contato</h1>
-        <a class="contato-icones" href="https://wa.me/5544920024399/?text=Oi%20Tudo%20bem%20?%20vamos%20conversar" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 16 16" width="42px" height="42px"><path d="M 7.5 1 C 3.914063 1 1 3.914063 1 7.5 C 1 8.796875 1.417969 9.984375 2.070313 11 L 0.953125 14.121094 L 4.429688 13.140625 C 5.351563 13.644531 6.375 14 7.5 14 C 11.085938 14 14 11.085938 14 7.5 C 14 3.914063 11.085938 1 7.5 1 Z M 7.5 2 C 10.542969 2 13 4.457031 13 7.5 C 13 10.542969 10.542969 13 7.5 13 C 6.457031 13 5.492188 12.707031 4.65625 12.203125 L 4.472656 12.089844 L 2.546875 12.628906 L 3.171875 10.894531 L 3.019531 10.683594 C 2.378906 9.78125 2 8.6875 2 7.5 C 2 4.457031 4.457031 2 7.5 2 Z M 5.0625 4 C 4.949219 4 4.761719 4.046875 4.601563 4.234375 C 4.445313 4.417969 4 4.867188 4 5.78125 C 4 6.691406 4.617188 7.574219 4.703125 7.699219 C 4.789063 7.824219 5.917969 9.695313 7.644531 10.5 C 8.054688 10.691406 8.375 10.804688 8.625 10.890625 C 9.039063 11.03125 9.414063 11.011719 9.710938 10.964844 C 10.042969 10.910156 10.730469 10.515625 10.875 10.082031 C 11.015625 9.648438 11.019531 9.277344 10.972656 9.199219 C 10.933594 9.121094 10.816406 9.074219 10.644531 8.984375 C 10.472656 8.890625 9.625 8.441406 9.46875 8.382813 C 9.3125 8.316406 9.195313 8.289063 9.078125 8.472656 C 8.964844 8.660156 8.636719 9.078125 8.535156 9.199219 C 8.433594 9.324219 8.335938 9.339844 8.164063 9.246094 C 7.988281 9.152344 7.433594 8.957031 6.777344 8.324219 C 6.265625 7.832031 5.917969 7.226563 5.820313 7.039063 C 5.71875 6.851563 5.808594 6.753906 5.894531 6.664063 C 5.972656 6.578125 6.066406 6.445313 6.152344 6.335938 C 6.238281 6.230469 6.265625 6.148438 6.324219 6.027344 C 6.382813 5.902344 6.355469 5.792969 6.3125 5.703125 C 6.265625 5.609375 5.921875 4.695313 5.78125 4.324219 C 5.640625 3.964844 5.496094 4.011719 5.390625 4.007813 C 5.292969 4 5.175781 4 5.0625 4 Z"/></svg></a>
-        <a class="contato-icones" href="mailto:sabrine@bl.com.br"><?xml version="1.0" ?><svg fill="none" height="48px" viewBox="0 0 34 27" width="48px" xmlns="http://www.w3.org/2000/svg"><path d="M28.5 25.6H5.5C3.4 25.6 1.70001 23.8929 1.70001 21.7841V5.41592C1.70001 3.30714 3.4 1.59998 5.5 1.59998H28.5C30.6 1.59998 32.3 3.30714 32.3 5.41592V21.7841C32.4 23.8929 30.6 25.6 28.5 25.6Z" stroke="#4F4F4F" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M17 14.9557L2.60001 3.60834" stroke="#4F4F4F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><path d="M31.4 3.60834L17 14.9557" stroke="#4F4F4F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/></svg></a>
     </section>
+    
 
 
 </body>
