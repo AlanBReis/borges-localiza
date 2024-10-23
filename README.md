@@ -9,8 +9,6 @@ O **Borges Localiza** é um site criado para auxiliar na localização e apreens
   - CSS
   - JavaScript
 
-- **Back-end**:
-  - Flask (Python)
 
 ## Funcionalidades
 
