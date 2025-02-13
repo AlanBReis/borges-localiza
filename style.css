@@ -52,8 +52,8 @@ body {
 /* Estilização do cabeçalho */
 
 header {
-    background-color: #fe7f18; /* Laranja */
-    color: #fff; /* Branco */
+    background-color: #e8eee8; /* Laranja */
+    color: #313030; /* Branco */
     padding: 20px;
     text-align: center;
     font-size: 36px;
@@ -123,11 +123,11 @@ h2 {
 
 .service-item h3 {
     margin-bottom: 10px;
-    color: #fe7f18; /* Laranja para títulos dos serviços */
+    color: #111111; 
 }
 
 .service-item p {
-    color: #666;
+    color: #464646;
 }
 
 
@@ -318,6 +318,10 @@ button:hover {
     padding: 10px;
     color: #fff; /* Branco */
     
+}
+
+.contact {
+    text-align: center;
 }
 
 footer {
